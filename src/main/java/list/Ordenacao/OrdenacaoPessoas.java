@@ -19,8 +19,10 @@ public class OrdenacaoPessoas {
   public List<Pessoa> ordenarPorIdade() {
     List<Pessoa> pessoasPorIdade = new ArrayList<>(pessoaList);
     if (!pessoaList.isEmpty()) {
+    	
       Collections.sort(pessoasPorIdade);
       return pessoasPorIdade;
+      
     } else {
       throw new RuntimeException("A lista está vazia!");
     }

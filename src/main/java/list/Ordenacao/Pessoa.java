@@ -15,8 +15,8 @@ public class Pessoa implements Comparable<Pessoa> {
   }
 
   @Override
-  public int compareTo(Pessoa p) {
-    return Integer.compare(idade, p.getIdade());
+  public int compareTo(Pessoa pes) {
+    return Integer.compare(idade, pes.getIdade());
   }
 
   public String getNome() {
